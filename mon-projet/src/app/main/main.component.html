@@ -1,1 +1,14 @@
-<p>main works!</p>
+
+@if(personnageChoisi){
+    <div class="personnage">
+        <h2>{{ personnageAleatoire?.nom }}</h2>
+        <p>Niveau: {{ personnageAleatoire?.niveau }}</p>
+        <p>Role: {{ personnageAleatoire?.role }}</p>
+        <p>Type: {{ personnageAleatoire?.type }}</p>
+    </div>
+}
+@else {
+    <h1>Cliquez sur le bouton pour choisir un personnage</h1>
+
+}
+<button (click)="genererPersonnageAleatoire()">Générer Personnage Aléatoire</button>
