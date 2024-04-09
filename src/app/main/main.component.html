@@ -1,11 +1,17 @@
 
 @if(personnageChoisi){
     <div class="personnage">
-        <h2>{{ personnageAleatoire?.nom }}</h2>
-        <p>Niveau: {{ personnageAleatoire?.niveau }}</p>
-        <p>Role: {{ personnageAleatoire?.role }}</p>
-        <p>Type: {{ personnageAleatoire?.type }}</p>
-        <img src="/src/assets/{{personnageAleatoire?.lienImage }}">
+        <div class="personnage">
+            <div class="personnage-details">
+                <h2>{{ personnageAleatoire?.nom }}</h2>
+                <p>Niveau: {{ personnageAleatoire?.niveau }}</p>
+                <p>Role: {{ personnageAleatoire?.role }}</p>
+                <p>Type: {{ personnageAleatoire?.type }}</p>
+            </div>
+            <div class="personnage-image">
+                <img src="../../assets/{{ personnageAleatoire?.lienImage }}" alt="Image" style="width: 200px; height: auto;">
+            </div>
+        </div>
 
     </div>
 }
